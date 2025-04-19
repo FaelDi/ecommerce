@@ -14,11 +14,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/authUsers")
-public class AuthUsersController extends BaseController<UserLoginDTO, AuthUserService>{
+public class AuthUsersController {
 
+    private final AuthUserService service;
 
     public AuthUsersController(AuthUserService service) {
-        super(service);
+        this.service = service;
     }
 
     @PostMapping("/authenticate")
