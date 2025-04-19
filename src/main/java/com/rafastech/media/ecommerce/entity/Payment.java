@@ -1,5 +1,4 @@
-package com.rafastech.media.ecommerce.model;
-
+package com.rafastech.media.ecommerce.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

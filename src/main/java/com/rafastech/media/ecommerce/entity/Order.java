@@ -1,4 +1,4 @@
-package com.rafastech.media.ecommerce.model;
+package com.rafastech.media.ecommerce.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;

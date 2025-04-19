@@ -1,6 +1,6 @@
 package com.rafastech.media.ecommerce.controller;
 
-import br.com.digitalgab.backend.service.BaseService;
+import com.rafastech.media.ecommerce.service.BaseService;
 import jakarta.persistence.EntityNotFoundException;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
