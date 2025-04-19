@@ -33,8 +33,8 @@ public class SecurityConfig {
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
-                        .requestMatchers(HttpMethod.POST,  "/authUsers","/authUsers/authenticate").permitAll()
-                        .requestMatchers(HttpMethod.GET, "/authUsers").permitAll()
+                        .requestMatchers(HttpMethod.POST,  "/users", "/authUsers","/authUsers/authenticate").permitAll()
+                        .requestMatchers(HttpMethod.GET, "/authUsers", "/users").permitAll()
                         .anyRequest().authenticated()
                 )
                 .headers(headers -> headers.frameOptions(HeadersConfigurer.FrameOptionsConfig::disable))
